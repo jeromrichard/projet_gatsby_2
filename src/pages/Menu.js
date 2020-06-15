@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import { Link } from "gatsby";
 
 const Menu = () => {
   const data = useStaticQuery(graphql`
@@ -36,7 +37,7 @@ const Menu = () => {
         ))}
       </ul>
     </div>
-    
+    <Link to="/">Go back to the homepage</Link>
   );
 };
 
