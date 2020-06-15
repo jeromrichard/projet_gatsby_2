@@ -2,6 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Link } from "gatsby";
 
+import Layout from "../components/layout"
 const Menu = () => {
   const data = useStaticQuery(graphql`
     query MenuQuery {
@@ -24,6 +25,7 @@ const Menu = () => {
   return (
    
     <div>
+        <Layout>
       <h3>Collaborateur</h3>
 
       <ul>
@@ -37,6 +39,7 @@ const Menu = () => {
         ))}
       </ul>
       <Link to="/">Go back to the homepage</Link>
+      </Layout>
     </div>
     
   );
