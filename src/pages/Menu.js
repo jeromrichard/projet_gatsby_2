@@ -36,9 +36,11 @@ const Menu = () => {
           </li>
         ))}
       </ul>
+      <Link to="/">Go back to the homepage</Link>
     </div>
-    <Link to="/">Go back to the homepage</Link>
+    
   );
+ 
 };
 
 export default Menu;
