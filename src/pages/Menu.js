@@ -1,10 +1,10 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Link } from "gatsby";
 
 import Layout from "../components/layout"
 const Menu = () => {
-  const data = useStaticQuery(graphql`
+  const data = (graphql`
     query MenuQuery {
       Collaborateur: allAirtable(
         filter: { table: { eq: "Collaborateur" } }
