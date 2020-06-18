@@ -27,7 +27,8 @@ const ComponentName = () => {
         {data.Site_web.nodes.map((item, i) => (
           <li key={item.recordId}>
           <p>
-              {item.data.Nom_du_site} {item.data.Blogposts}
+              {item.data.Nom_du_site}</p> 
+          <p> {item.data.Blogposts}
             </p>
           <p>{item.data.Categories}</p>
             
