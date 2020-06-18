@@ -15,6 +15,10 @@ module.exports = {
           baseId: `appUupdiPvAlAzVdL`,
           tableName: `Collaborateur`
         },
+        {
+          baseId: `appYBiueC9UFgx9aZ`,
+          tableName: `Site web`
+        }
       ]
     }
   },

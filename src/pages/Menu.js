@@ -31,10 +31,11 @@ const Menu = () => {
       <ul>
         {data.Collaborateur.nodes.map((item, i) => (
           <li key={item.recordId}>
-            <p>
+          <p>
               {item.data.Name} {item.data.Role}
             </p>
-            <p>{item.data.AdresseMail}</p>
+          <p>{item.data.AdresseMail}</p>
+            
           </li>
         ))}
       </ul>
@@ -47,3 +48,4 @@ const Menu = () => {
 };
 
 export default Menu;
+       
