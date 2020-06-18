@@ -5,29 +5,38 @@ import Layout from "../components/layout"
 
 const ComponentName = () => {
   const data = useStaticQuery(graphql`
-    {
-      allAirtable {
+  query menuQueryAndMenuQuery {
+    Site_web: allAirtable (
+      filter: { table: { eq: "Site web" } }
+      sort: { fields: data___Nom_du_site, order: DESC }
+    ) {
         nodes {
-          data {          
+          data { 
+            Nom_du_site
+            Blogposts         
             Categories
           }
+          recordId
         }
       }
     }
   `);
   return (
-<div>
-    <Layout>
-        <ul>
+  <div>
+    <layout>
         {data.Site_web.nodes.map((item, i) => (
-          
-         <p>{item.data.Categories}</p>))}
-        </ul>
-        <Link to="/">Go back to the homepage</Link>
-    </Layout>
-</div>
-
-  );
+          <li key={item.recordId}>
+          <p>
+              {item.data.Nom_du_site} {item.data.Blogposts}
+            </p>
+          <p>{item.data.Categories}</p>
+            
+          </li>
+        ))} 
+      <Link to="/">Go back to the homepage</Link>  
+      </layout>   
+  </div>
+  );  
 };
 
 
