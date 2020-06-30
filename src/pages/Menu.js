@@ -26,19 +26,31 @@ const Menu = () => {
    
     <div>
         <Layout>
-      <h3>Collaborateur</h3>
+        <div>
+          <h1>Collaborateur</h1>
+          <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>AdresseMail</th>             
+            </tr>
+          </thead>
+          <tbody>
+          {data.Collaborateur.nodes.map((item, i) => (
+              <tr key={item.recordId}>
+                <td>{item.data.Name}</td>
+                <td>{item.data.Role}</td>
+                <td>{item.data.AdresseMail}</td>
+                
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    
 
-      <ul>
-        {data.Collaborateur.nodes.map((item, i) => (
-          <li key={item.recordId}>
-          <p>
-              {item.data.Name} {item.data.Role}
-            </p>
-          <p>{item.data.AdresseMail}</p>
-            
-          </li>
-        ))}
-      </ul>
+    
       <Link to="/">Go back to the homepage</Link>
       </Layout>
     </div>
