@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 const Menu = () => {
   const data = useStaticQuery(graphql`
     query MenuQuery {
-      Collaborateur: allAirtable(
+      allAirtable(
         filter: { table: { eq: "Collaborateur" } }
         sort: { fields: data___Name, order: DESC }
       ) {
@@ -15,6 +15,7 @@ const Menu = () => {
             Name
             Role
             AdresseMail
+            Client
           }
           recordId
         }
@@ -33,30 +34,26 @@ const Menu = () => {
             <tr>
               <th>Name</th>
               <th>Role</th>
-              <th>AdresseMail</th>             
+              <th>AdresseMail</th>   
+              <th>Client</th> 
             </tr>
           </thead>
           <tbody>
-          {data.Collaborateur.nodes.map((item, i) => (
+            {data.allAirtable.nodes.map((item,i) => (
               <tr key={item.recordId}>
                 <td>{item.data.Name}</td>
                 <td>{item.data.Role}</td>
-                <td>{item.data.AdresseMail}</td>
-                
+                <td>{item.data.AdresseMail}</td>  
+                <td>{item.data.Client}</td>             
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-    
-
-    
       <Link to="/">Go back to the homepage</Link>
       </Layout>
-    </div>
-    
-  );
- 
+    </div>    
+  ); 
 };
 
 export default Menu;
