@@ -1,4 +1,35 @@
 ---
 label: Name
 hide_body: false
-fields: []
+fields:
+- name: id_du_collaborateur
+  type: number
+  label: id du collaborateur
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  hidden: true
+- name: nom_du_collaborateur
+  type: text
+  config:
+    required: false
+  label: nom du collaborateur
+- name: role_du_collaborateur
+  type: text
+  config:
+    required: false
+  label: role du collaborateur
+- name: adresse_mail
+  type: text
+  config:
+    required: false
+  label: adresse mail
+- name: client
+  type: text
+  config:
+    required: false
+  label: client
