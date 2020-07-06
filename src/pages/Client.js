@@ -13,7 +13,7 @@ const Menu = () => {
         ) {
           nodes {
             data {
-              Name
+              Client_name
               Adresse_client
             }
             recordId
@@ -40,7 +40,7 @@ const Menu = () => {
             <tbody>
               {data.allAirtable.nodes.map((item,i) => (
                 <tr key={item.recordId}>
-                  <td>{item.data.Name}</td>                  
+                  <td>{item.data.Client_name}</td>                  
                   <td>{item.data.Adresse_client}</td>        
                 </tr>
               ))}
