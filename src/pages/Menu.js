@@ -16,7 +16,7 @@ const Menu = () => {
             Name
             Role
             AdresseMail
-            Client
+            Client_name__from_Client_
           }
           recordId
         }
@@ -45,7 +45,7 @@ const Menu = () => {
                 <td>{item.data.Name}</td>
                 <td>{item.data.Role}</td>
                 <td>{item.data.AdresseMail}</td>  
-                <td> <Link to="/Client/">{item.data.Client}</Link></td>             
+                <td> <Link to="/Client/">{item.data.Client_name__from_Client_}</Link></td>             
               </tr>
             ))}
           </tbody>

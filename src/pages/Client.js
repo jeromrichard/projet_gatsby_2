@@ -7,14 +7,11 @@ import SEO from "../components/seo"
 const Menu = () => {
     const data = useStaticQuery(graphql`
       query menuQueryandMenuQuery {
-        allAirtable(
-          filter: { table: { eq: "Client" } }
-          sort: { fields: data___Name, order: DESC }
-        ) {
+        allAirtable {
           nodes {
             data {
-              Client_name
-              Adresse_client
+              Client_name__from_Client_
+            Adresse_client__from_Client_
             }
             recordId
           }
@@ -40,8 +37,8 @@ const Menu = () => {
             <tbody>
               {data.allAirtable.nodes.map((item,i) => (
                 <tr key={item.recordId}>
-                  <td>{item.data.Client_name}</td>                  
-                  <td>{item.data.Adresse_client}</td>        
+                  <td>{item.data.Client_name__from_Client_}</td>                  
+                  <td>{item.data.Adresse_client__from_Client_}</td>        
                 </tr>
               ))}
             </tbody>
