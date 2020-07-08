@@ -1,0 +1,48 @@
+---
+label: niéééééé
+hide_body: true
+fields:
+- type: text
+  name: label
+  label: label
+- type: boolean
+  name: hide_body
+  label: hide_body
+- type: field_group_list
+  name: fields
+  label: fields
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: type
+    label: type
+  - type: text
+    name: label
+    label: label
+  - type: text
+    name: description
+    label: description
+  - type: number
+    name: default
+    label: default
+  - type: boolean
+    name: required
+    label: required
+  - type: field_group
+    name: config
+    label: config
+    fields:
+    - type: text
+      name: min
+      label: min
+    - type: text
+      name: max
+      label: max
+    - type: text
+      name: step
+      label: step
+  - type: boolean
+    name: hidden
+    label: hidden
