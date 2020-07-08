@@ -44,7 +44,9 @@ const Menu = () => {
             </tbody>
           </table>
         </div>
-        <Link to="/Menu/">Go back to Collaborateur</Link>
+        <p><Link to="/Menu/">Go back to Collaborateur</Link></p>
+        
+        <p><Link to="/">Go back to the homepage</Link></p>
         </Layout>
       </div>    
     ); 
