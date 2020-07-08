@@ -1,48 +1,41 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+---
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+---
+<! - CONTENU GÉNÉRÉ AUTOMATIQUEMENT: DÉMARRAGE (DÉMARRAGE) -> <p align = "center"> <a href="https://www.gatsbyjs.org"> <img alt = "Gatsby" src = "https: // www .gatsbyjs.org / monogram.svg "width =" 60 "/> </a> </p> <h1 align =" center "> Démarreur par défaut de Gatsby </h1>
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Lancez votre projet avec ce passe-partout par défaut. Ce démarreur est livré avec les principaux fichiers de configuration Gatsby n'a pas besoin d'avoir besoin d'être opérationnel rapidement avec le générateur d'application rapide pour React.
 
-## 🚀 Quick start
+_Vous avez une autre idée plus précise? Vous voudrez peut-être consulter notre collection dynamique de_  [_démarreurs officiels et initiés par la communauté_](https://www.gatsbyjs.org/docs/gatsby-starters/)  _._
 
-1.  **Create a Gatsby site.**
+## 🚀 Démarrage rapide
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+1. **Créez un site Gatsby.**
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+   Utilisez l'interface CLI Gatsby pour créer un nouveau site, en spécifiant le démarreur par défaut.
 
-1.  **Start developing.**
+   ```shell
+   # create a new Gatsby site using the default starter
+   gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+   ```
+2. **Commencez à développer.**
 
-    Navigate into your new site’s directory and start it up.
+   Accédez au répertoire de votre nouveau site et démarrez-le.
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+   ```shell
+   cd my-default-starter/
+   gatsby develop
+   ```
+3. **Ouvrez le code source et commencez à éditer!**
 
-1.  **Open the source code and start editing!**
+   Votre site fonctionne maintenant sur `http://localhost:8000`!
 
-    Your site is now running at `http://localhost:8000`!
+   _Remarque: Vous voyez aussi aussi de deuxiéme PRIVILEGE`http://localhost:8000/___graphql`_ . Il s'agit d'un outil que vous pouvez utiliser pour expérimenter l'interrogation de vos données. En savoir plus sur l'utilisation de cet outil dans le [didacticiel Gatsby](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql) .
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+   Ouvrez le `my-default-starter`répertoire dans l'éditeur de code de votre choix et modifiez-le `src/pages/index.js`. Enregistrez vos modifications et le navigateur se metra à jour en temps réel!
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+## 🧐 Qu'y at-il à l'intérieur?
 
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+Un aperçu rapide des fichiers et des répertoires de niveau supérieur que vous consultez dans un projet Gatsby.
 
     .
     ├── node_modules
@@ -58,37 +51,25 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package.json
     └── README.md
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
+ 1. **`/node_modules`**: Ce répertoire contient tous les modules de code dont votre projet dépend (packages npm) sont automatiquement installés.
+ 2. **`/src`**: Ce répertoire contiendra tout le code lié à ce que vous voyez sur le front-end de votre site (ce que vous voyez dans le navigateur) comme l'en-tête de votre site ou un modèle de page. `src`est une convention pour le «code source».
+ 3. **`.gitignore`**: Ce fichier indique à git pour quels fichiers il ne doit pas suivre / ne pas conserver l'historique de version.
+ 4. **`.prettierrc`**: Ceci est un fichier de configuration pour [Prettier](https://prettier.io/) . Plus joli est un outil pour aider à garder la mise en forme de votre code cohérente.
+ 5. **`gatsby-browser.js`**: Ce fichier est l'endroit où Gatsby s'attend à trouver toute utilisation des [API du navigateur Gatsby](https://www.gatsbyjs.org/docs/browser-apis/) (le cas échéant). Ceux-ci permettent la personnalisation / l'extension des paramètres Gatsby par défaut affectant le navigateur.
+ 6. **`gatsby-config.js`**: Il s'agit du fichier de configuration principal d'un site Gatsby. C'est là que vous pouvez afficher des informations sur votre site (métadonnées) comme le titre et la description du site, les plugins Gatsby que vous souhaitez inclure, etc. (Consultez les [documents de configuration](https://www.gatsbyjs.org/docs/gatsby-config/) pour plus de détails).
+ 7. **`gatsby-node.js`**: Ce fichier est l'endroit où Gatsby s'attend à trouver toute utilisation des [API Gatsby Node](https://www.gatsbyjs.org/docs/node-apis/) (le cas échéant). Ceux-ci permettent la personnalisation / l'extension des paramètres Gatsby par défaut affectant les parties du processus de création de site.
+ 8. **`gatsby-ssr.js`**: Ce fichier est l'endroit où Gatsby s'attend à trouver toute utilisation des [API de rendu côté serveur Gatsby](https://www.gatsbyjs.org/docs/ssr-apis/) (le cas échéant). Ceux-ci permettent la personnalisation des paramètres Gatsby par défaut affectant le rendu côté serveur.
+ 9. **`LICENSE`**: Gatsby est sous licence MIT.
+10. **`package-lock.json`**(Voir `package.json`ci-dessous, d'abord). Il s'agit d'un fichier généré automatiquement en fonction des versions exactes de vos dépendances npm qui ont été installées pour votre projet. **(Vous ne modifierez pas directement ce fichier).**
+11. **`package.json`**: Un fichier manifeste pour les projets Node.js, qui inclut des éléments comme les métadonnées (nom du projet, auteur, etc.). Ce manifeste est la façon dont npm sait quels packages installer pour votre projet.
+12. **`README.md`**: Un fichier texte contenant des informations de référence utiles sur votre projet.
 
 ## 🎓 Learning Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+* **For most developers, we recommend starting with our** [**in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.org/tutorial/)**.** It starts with zero assumptions about your level of ability and walks through every step of the process.
+* **To dive straight into code samples, head** [**to our documentation**](https://www.gatsbyjs.org/docs/)**.** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## 💫 Deploy
 
