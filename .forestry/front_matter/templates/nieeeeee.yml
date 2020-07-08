@@ -35,12 +35,6 @@ fields:
     label: config
     fields:
     - type: text
-      name: min
-      label: min
-    - type: text
-      name: max
-      label: max
-    - type: text
       name: step
       label: step
   - type: boolean
