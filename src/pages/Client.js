@@ -12,6 +12,8 @@ const Menu = () => {
                     data {
                         Client_name__from_Client_
                         Adresse_client__from_Client_
+                        Code_postal__from_Client_
+                        Collaborateur__2__from_Client_
                     }
                     recordId
                 }
@@ -32,6 +34,8 @@ const Menu = () => {
                             <th style={{color: `red`}}>Name</th>
 
                             <th>Adresse</th>
+                            <th>Code postal</th>
+                            <th>Collaborateur</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -39,6 +43,8 @@ const Menu = () => {
                             <tr key={item.recordId}>
                                 <td>{item.data.Client_name__from_Client_}</td>
                                 <td>{item.data.Adresse_client__from_Client_}</td>
+                                <td>{item.data.Code_postal__from_Client_}</td>
+                                <td>{item.data.Collaborateur__2__from_Client_}</td>
                             </tr>
                         ))}
                         </tbody>

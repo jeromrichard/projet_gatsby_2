@@ -1,11 +1,11 @@
 import React from "react"
 import {Link} from "gatsby"
-import {useStaticQuery, graphql} from 'gatsby';
+import {graphql} from 'gatsby';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 
-const ComponentName = ({ data: {client: {data: {Adresse_client, Client_name}}} }) => {
+const ComponentName = ({ data: {client: {data: {Adresse_client, Client_name, Code_postal, Collaborateur_2}}} }) => {
     return <div>
         <Layout>
             <div>
@@ -16,12 +16,16 @@ const ComponentName = ({ data: {client: {data: {Adresse_client, Client_name}}} }
                     <tr>
                         <th style={{color: `red`}}>Name</th>
                         <th>Adresse</th>
+                        <th>Code postal</th>
+                        <th>Collaborateur</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td>{Client_name}</td>
                         <td>{Adresse_client}</td>
+                        <td>{Code_postal}</td>
+                        <td>{Collaborateur_2}</td>
                     </tr>
                     </tbody>
                 </table>
@@ -40,6 +44,8 @@ export const query = graphql`
             data {
                 Client_name
                 Adresse_client
+                Code_postal
+                Collaborateur_2
             }
         }
     }
